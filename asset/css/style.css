@@ -586,9 +586,14 @@ header {
 #Browser
 / ------------------------ */
 
+.browser-container {
+    position: relative;
+}
+
 .browser-item {
     display: flex;
     gap: 15px;
+    overflow: hidden;
     -webkit-column-gap: 15px;
 }
 
@@ -614,5 +619,17 @@ header {
     justify-content: center;
     background-color: #fff;
     border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    color: #0493bf;
+    transform: translateY(-50%);
     box-shadow: 0px 1px 10px #1d25292e;
+}
+
+.left-icon {
+    left: -25px;
+}
+
+.right-icon {
+    right: -25px;
 }
