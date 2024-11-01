@@ -586,6 +586,12 @@ header {
 #Browser
 / ------------------------ */
 
+.browser-item {
+    display: flex;
+    gap: 15px;
+    -webkit-column-gap: 15px;
+}
+
 .browser-item a {
     display: flex;
     color: #000;
@@ -593,9 +599,20 @@ header {
 }
 
 .browser-item img {
-    width: 300px;
-    height: 240px;
+    width: 350px;
+    height: 280px;
     margin-bottom: 10px;
     border-radius: 4px;
     object-fit: cover;
+}
+
+.browser-container i {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px #1d25292e;
 }
