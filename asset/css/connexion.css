@@ -11,7 +11,7 @@
     padding: 15px;
     border-radius: 10px;
     background-color: #d4dbdf4e;
-    box-shadow: 0px 1px 10px rgba(73, 73, 73, 0.114);
+    box-shadow: 0px 1px 10px #4949491d;
 }
 
 .login-section .login-text {
@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #37517e;
+    background-color: #0493bf;
 }
 
 .login-section .login-form {
@@ -34,7 +34,7 @@
 }
 
 .login-section .login-form h3 {
-    color: #37517e;
+    color: #0493bf;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -51,7 +51,7 @@
 }
 
 .login-section .login-form .inputs i {
-    color: #37517e;
+    color: #0493bf;
 }
 
 .login-section .login-form .input-submit {
@@ -65,7 +65,7 @@
     padding: 10px 15px;
     border-radius: 20px;
     text-transform: uppercase;
-    background-color: #37517e;
+    background-color: #0493bf;
 }
 
 .login-section .login-form input,
@@ -83,7 +83,7 @@ select {
 }
 
 .login-section .forgot-password a {
-    color: #37517e;
+    color: #0493bf;
     font-size: 14px;
 }
 
@@ -97,7 +97,7 @@ select {
 }
 
 .login-section .create-account a {
-    color: #37517e;
+    color: #0493bf;
 }
 
 
