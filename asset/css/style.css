@@ -601,10 +601,11 @@ header {
     display: flex;
     color: #000;
     flex-direction: column;
+    transition: transform 0.5s ease;
 }
 
 .browser-item img {
-    width: 350px;
+    width: 335px;
     height: 280px;
     margin-bottom: 10px;
     border-radius: 4px;
@@ -615,6 +616,7 @@ header {
     width: 45px;
     height: 45px;
     display: flex;
+    z-index: 20;
     align-items: center;
     justify-content: center;
     background-color: #fff;

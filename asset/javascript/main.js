@@ -103,3 +103,69 @@ jQuery(function($) {
         }
     });
 });
+
+
+/*------------------------------
+#Browser
+/-----------------------------*/
+
+const browserItem = document.querySelector('.browser-item');
+const members = document.querySelectorAll('.browser-item .member');
+const leftChevron = document.querySelector('.left-icon');
+const rightChevron = document.querySelector('.right-icon');
+
+let currentStartIndex = 0;
+let visibleCount = getVisibleCount(); // Initialiser le nombre d'éléments visibles
+
+// Fonction pour obtenir visibleCount selon la taille d'écran
+function getVisibleCount() {
+    if (window.innerWidth >= 1230) {
+        return 4; // Ordinateur large
+    } else if (window.innerWidth >= 970) {
+        return 3; // Ordinateur moyen
+    } else if (window.innerWidth >= 560) {
+        return 2; // Tablette
+    } else {
+        return 1; // Mobile
+    }
+}
+
+// Fonction pour mettre à jour la visibilité des membres
+function updateVisibility() {
+    members.forEach((member, index) => {
+        // Affiche les membres selon currentStartIndex
+        member.style.display = (index >= currentStartIndex && index < currentStartIndex + visibleCount) ? 'block' : 'none';
+    });
+
+    // Mettre à jour l'affichage des chevrons
+    leftChevron.style.display = (currentStartIndex > 0) ? 'flex' : 'none';
+    rightChevron.style.display = (currentStartIndex + visibleCount < members.length) ? 'flex' : 'none';
+}
+
+// Écouteur pour le bouton Next
+rightChevron.addEventListener('click', () => {
+    // Vérifier si on peut avancer
+    if (currentStartIndex + 1 < members.length) { // Incrémenter l'index pour faire défiler un seul élément
+        currentStartIndex++;
+        updateVisibility();
+    }
+});
+
+// Écouteur pour le bouton Prev
+leftChevron.addEventListener('click', () => {
+    // Vérifier si on peut reculer
+    if (currentStartIndex > 0) {
+        currentStartIndex--;
+        updateVisibility();
+    }
+});
+
+// Mise à jour du nombre d'éléments visibles au redimensionnement de la fenêtre
+window.addEventListener('resize', () => {
+    visibleCount = getVisibleCount();
+    currentStartIndex = 0; // Réinitialise pour revenir au début de la liste
+    updateVisibility();
+});
+
+// Initialiser la visibilité au chargement de la page
+updateVisibility();
