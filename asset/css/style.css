@@ -810,7 +810,7 @@ textarea {
     font-size: 0.8rem;
     width: 100%;
     margin-top: 10px;
-    font-family: "Sulphur Point", sans-serif;
+    font-family: "Teachers", sans-serif;
     border: 1px solid hsl(0, 0%, 91%);
 }
 
@@ -842,7 +842,7 @@ textarea {
     background-color: #0493bf;
     transition-delay: 0.4s;
     transition: 0.8s ease-in-out;
-    font-family: "Sulphur Point", sans-serif;
+    font-family: "Teachers", sans-serif;
 }
 
 
