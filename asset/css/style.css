@@ -636,6 +636,19 @@ header {
     right: -25px;
 }
 
+@media screen and (max-width: 580px) {
+    .left-icon {
+        left: -15px;
+    }
+    .right-icon {
+        right: -15px;
+    }
+    .browser-item img {
+        width: 100%;
+        min-width: 370px;
+    }
+}
+
 
 /*---------------------------/
 #Services
