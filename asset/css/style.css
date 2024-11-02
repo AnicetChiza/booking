@@ -105,6 +105,7 @@ h6 {
 
 body {
     font-size: 18px;
+    color: #141b1fda;
     font-family: "Teachers", sans-serif;
 }
 
@@ -737,5 +738,136 @@ header {
     }
     .service-container:hover {
         transform: translateY(3px);
+    }
+}
+
+
+/*---------------------------/
+#Contacts
+/-------------------------- */
+
+.contact-info {
+    display: flex;
+    gap: 25px;
+    -webkit-column-gap: 25px;
+    justify-content: center;
+}
+
+.contact-info div {
+    gap: 5px;
+    color: #141b1fda;
+    text-align: center;
+    padding: 20px 25px;
+    height: fit-content;
+    transition-delay: 0.2s;
+    -webkit-column-gap: 5px;
+    transition-delay: 0.1s;
+    transition: 0.2s ease-in-out;
+}
+
+.contact-info div i {
+    width: 50px;
+    height: 50px;
+    color: #0493bf;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px hsl(0, 0%, 91%);
+}
+
+.contact-info div h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contact-info div p {
+    font-size: 0.8rem;
+}
+
+.contact-info div p {
+    color: #141b1fda;
+    font-size: 0.9rem;
+}
+
+.contact-info div a {
+    color: #141b1fda;
+    font-size: 0.9rem;
+}
+
+.contact-info div:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 1px 10px hsl(0, 0%, 91%);
+}
+
+.contact-input input,
+textarea {
+    outline: none;
+    padding: 15px 15px;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 10px;
+    font-family: "Sulphur Point", sans-serif;
+    border: 1px solid hsl(0, 0%, 91%);
+}
+
+.contact-input {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contact-input div {
+    display: flex;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.contact-input button {
+    border: none;
+    outline: none;
+    background: unset;
+    width: fit-content;
+    color: #fff;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: #0493bf;
+    transition-delay: 0.4s;
+    transition: 0.8s ease-in-out;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 1050px) {
+    .contact-input {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-info {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        -webkit-column-gap: 25px;
+        justify-content: center;
+    }
+    .contact-input div {
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+        -webkit-column-gap: 0px;
     }
 }
