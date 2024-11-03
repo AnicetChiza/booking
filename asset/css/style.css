@@ -1225,10 +1225,6 @@ h2 {
     width: 100%;
 }
 
-.hotel-card:hover {
-    transform: translateY(-2px);
-}
-
 .image-container {
     position: relative;
     width: 300px;
@@ -1244,7 +1240,6 @@ h2 {
 
 .hotel-card:hover .image-container img {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transform: scale(1.05);
 }
 
 .favorite-btn {
