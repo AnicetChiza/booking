@@ -305,6 +305,30 @@ header {
     }
 }
 
+/*---------------------------/
+#connexion
+/-------------------------- */
+
+.connexion-page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.connexion-page div{
+    display: flex;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.connexion-page a{
+    background-color: #fff;
+    color: #0493bf;
+    padding: 15px 30px;
+    box-shadow: 0px 1px 10px #5d5e5e2e;
+}
+
 
 /* ------------------------ /
 #Home page
