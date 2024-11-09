@@ -232,6 +232,7 @@ header {
         transform: translateX(-120%);
         gap: 30px;
         z-index: 2002;
+        align-items: flex-start;
         transition: transform 0.3s ease;
     }
     .header-list ul.active {
