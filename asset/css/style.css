@@ -407,7 +407,12 @@ header {
     position: absolute;
     top: 130px;
     right: 100px;
+    font-size: 16px;
     background-color: #c0c0c035;
+}
+
+.search input{
+    font-family: "Teachers", sans-serif;
 }
 
 .search form{
