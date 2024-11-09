@@ -234,3 +234,20 @@ document.querySelectorAll('.down').forEach(downIcon => {
 document.querySelectorAll('.right').forEach(rightIcon => {
     rightIcon.style.display = 'inline';
 });
+
+// -----------------------------
+function showDropdown() {
+    document.getElementById("dropdown-content").style.display = "block";
+}
+
+function selectOption(value) {
+    document.getElementById("dropdown-input").value = value;
+    document.getElementById("dropdown-content").style.display = "none";
+}
+
+// Fermer la liste déroulante si l'utilisateur clique en dehors
+document.addEventListener("click", function(event) {
+    if (!event.target.closest(".dropdown")) {
+        document.getElementById("dropdown-content").style.display = "none";
+    }
+});
